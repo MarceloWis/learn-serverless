@@ -1,0 +1,21 @@
+{
+  "name": "rest-api-with-dynamodb-offline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "docker": "docker-compose up --force-recreate",
+    "dev": "npm install; serverless offline start --stage local"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.800.0",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^6.8.0"
+  },
+  "dependencies": {
+    "uuid": "^8.3.1"
+  }
+}
