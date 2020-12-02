@@ -1,0 +1,10 @@
+service: node-testing-lambda-jest
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  localGreeting:
+    handler: handler.endpoint
